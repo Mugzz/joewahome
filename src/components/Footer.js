@@ -9,12 +9,7 @@ const Footer = () => {
         <Typography className='footer_name'>{data.name}</Typography>
       </div>
       <div className='footer_right'>
-        <Typography className='footer_copyright'>
-          Developed |<a href='https://bmugenya.netlify.app/'>Brian Mugenya</a>
-          <br />
-          {/* Designed |
-          <a href='https://themeforest.net/user/tavonline'>Travonline</a> */}
-        </Typography>
+        
       </div>
     </div>
   )

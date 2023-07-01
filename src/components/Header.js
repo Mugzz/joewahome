@@ -17,7 +17,11 @@ import CustomButton from './Button'
 
 const Header = (props) => {
   const pathName = props?.location?.pathname
- 
+  
+  const handleEmailClick = () => {
+    window.location.href = `mailto:joewahomek@gmail.com`;
+  };
+
 
   return (
     <Navbar expand='lg' sticky='top' className='header'>
@@ -39,7 +43,7 @@ const Header = (props) => {
               {data.socials[key].icon}
             </a>
           ))}
-          <CustomButton text={'Hire Me'} href={'https://www.fiverr.com/share/a3zroa'} icon={<TelegramIcon />} />
+          <CustomButton text={'Hire Me'}  onClick={handleEmailClick} icon={<TelegramIcon />} />
         </div>
       </Navbar.Collapse>
     </Navbar>

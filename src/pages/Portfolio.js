@@ -12,84 +12,46 @@ import {
   DialogTitle,
   DialogContent,
   DialogActions,
+  Button,
   CardActionArea,
-} from '@material-ui/core'
-import React, { useState } from 'react'
-import '../assets/css/Profile.css'
-import data from '../utils/data'
+} from '@material-ui/core';
+import React, { useState } from 'react';
+import '../assets/css/Profile.css';
+import data from '../utils/data';
+
 const Portfolio = () => {
-  const [tabValue, setTabValue] = useState('All')
-  const [projectDialog, setProjectDialog] = useState(false)
+  const [tabValue, setTabValue] = useState('All');
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+
   return (
     <Grid container spacing={1} className='section pb_45 pt_45'>
-      
-      
       <Grid item xs={12}>
         <Grid container spacing={2}>
           {data.projects.map((project) => (
-            <>
-              {tabValue == project.tag || tabValue == 'All' ? (
-                <Grid item xs={12} sm={6} md={4}>
+            <React.Fragment key={project.title}>
+              {tabValue === project.tag || tabValue === 'All' ? (
+                <Grid item xs={12} sm={6} md={6}>
                   <Grow in timeout={1000}>
-                    <Card
-                      className='custom_card'
-                      onClick={() => setProjectDialog(project)}
-                    >
+                    <Card className='custom_card' onClick={() => setCurrentVideoIndex(data.projects.indexOf(project))}>
                       <CardActionArea>
                         <CardMedia className='card_img'>
-                          <video
-                            width='100%'
-                            height='240'
-                            autoPlay
-                            muted
-                            controls
-                          >
-                            <source src={project.image} />
+                          <video width='100%' height='240' autoPlay muted controls>
+                            <source src={project.image[currentVideoIndex]} />
                           </video>
                         </CardMedia>
-                        <CardContent>
-                          <Typography variant='body2' className='card_title'>
-                            {project.title}
-                          </Typography>
-                        </CardContent>
+
                       </CardActionArea>
+            
                     </Card>
                   </Grow>
                 </Grid>
               ) : null}
-            </>
+            </React.Fragment>
           ))}
         </Grid>
       </Grid>
-
-      <Dialog
-        open={projectDialog}
-        onClose={() => setProjectDialog(false)}
-        className='dialog'
-      >
-        <DialogTitle onClose={() => setProjectDialog(false)}>
-          {projectDialog.title}
-        </DialogTitle>
-        <CardMedia className='dialog_img'>
-          <video width='100%' height='240' autoPlay muted controls>
-            <source src={projectDialog.image} />
-          </video>
-        </CardMedia>{' '}
-        <DialogContent>
-          <Typography className='dialog_des'>
-            {projectDialog.description}
-          </Typography>
-        </DialogContent>
-        <DialogActions className='dialog_actions'>
-          {projectDialog?.links?.map((link) => (
-            <a href={link.link} target='_blank' className='dialog_icon'>
-              {link.icon}
-            </a>
-          ))}
-        </DialogActions>
-      </Dialog>
     </Grid>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

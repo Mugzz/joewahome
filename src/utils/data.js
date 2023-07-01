@@ -7,45 +7,65 @@ import GradeIcon from '@material-ui/icons/Grade'
 import LinkIcon from '@material-ui/icons/Link'
 
 export default {
-  name: 'Brian Mugenya',
-  title: 'Software Developer',
-  birthday: '26th November 1995',
-  email: 'bmugenya26@gmail.com',
-  phone: '+254 700577453',
-  address: 'Nairobi, Kenya',
+  name: 'Joseph Wahome',
+  title: 'Architect',
+  birthday: '6th May, 1996',
+  email: 'joewahomek@gmail.com',
+  phone: ' 0797652526 / 0799168713',
+  address: 'P.O Box 140-20303, Ol-Kalou',
 
   socials: {
     facebook: {
-      link: 'https://www.facebook.com/misty.builder',
+      link: 'https://www.facebook.com',
       text: 'Friend me on Facebook',
       icon: <FacebookIcon />,
     },
     twitter: {
-      link: 'https://twitter.com/BrianMugenya',
+      link: 'https://twitter.com',
       text: 'Follow me on Twitter',
       icon: <TwitterIcon />,
     },
     linkedin: {
-      link: 'https://www.linkedin.com/in/brian-mugenya-007/',
+      link: 'https://www.linkedin.com',
       text: 'Connect with me on Linkedin',
       icon: <LinkedInIcon />,
     },
-    github: {
-      link: 'https://www.github.com/bmugenya',
-      text: 'View my work on Github',
-      icon: <GitHubIcon />,
-    },
-    badges: {
-      link: 'https://www.youracclaim.com/users/brian-mugenya/badges',
 
-      text: 'Find my badges on Acclaim',
-      icon: <GradeIcon />,
-    },
- 
   },
 
-  about:"I am a software developer with a passion for building scalable and secure applications. I have developed several projects over the years, where I have gained experience in programming languages such as PHP, JavaScript and Python, as well as frameworks like React and Flask. I enjoy analyzing complex problems and breaking them down into smaller components to develop effective solutions. \n\n I am a team player who enjoys collaborating with others to achieve project goals. I understand the importance of clear communication and effective collaboration to ensure project success. I am strongly passionate about innovative ideas and problem-solving using programming technologies. I am a time conscious, self-driven Individual who is eager to learn and apply new skills and knowledge to the work place. My open minded nature allows me to work in a multi-cultural team and adapt to new cultures.",
+  about:`I am a skilled and dedicated Architect with a passion for creating innovative and functional designs.
+   With a diploma in Architecture from the Technical University of Mombasa and a strong background 
+   in Information Communication Technology, I bring a unique blend of technical expertise and creative vision to my work.
 
+Throughout my professional journey, I have gained extensive experience in software integration, installation of internet
+ and Wi-Fi, and have worked on various architectural projects, including residential homes, office blocks, and rental bedsitters.
+  I am proficient in using ArchiCAD versions 19 to 24, as well as rendering software such as Lumion and Twinmotion, 
+  which allows me to bring designs to life and present them in a visually appealing manner.
+
+I am detail-oriented, deadline-driven, and possess excellent reporting and research skills. 
+I am adept at managing multiple tasks and projects simultaneously, while maintaining a high level of accuracy and confidentiality. 
+My proficiency in office automation tools such as MS Word, PowerPoint, and Excel enables me to efficiently organize and present 
+project-related information.
+
+As a natural leader and effective communicator, I thrive in collaborative environments and value teamwork. I am known for my 
+problem-solving abilities and the ability to adapt to changing circumstances. I am dedicated to delivering high-quality 
+work and exceeding client expectations.
+
+Fluent in both English and Kiswahili, I am able to effectively communicate with clients, colleagues, and stakeholders 
+from diverse backgrounds.
+
+Outside of work, I enjoy reading magazines and journals to stay updated on industry trends, listening to music
+ for inspiration, swimming for relaxation, and watching to broaden my creative horizons.
+
+I invite you to review my portfolio, which showcases my projects, including 4-bedroom homes, 3-bedroom bungalows,
+ office blocks, and renders. I am confident that my skills, experience, and passion for architecture make me a valuable
+  asset to any design team.
+
+Please feel free to reach out to my referees, Mr. Mwatu and Architect Alex Maninga, who can provide further insight into 
+my professional capabilities and work ethic.
+
+I look forward to the opportunity to contribute my skills and expertise to your
+ organization and to collaborate on exciting architectural projects.`,
   certifications: [
     {
       title: 'FreeCodeCamp',
@@ -122,8 +142,11 @@ export default {
   projects: [
     {
       tag: 'Flask',
-      image:
-        'https://res.cloudinary.com/doammcpie/video/upload/v1627105594/tweet_olgnv5.webm',
+      image:[
+       'https://res.cloudinary.com/doammcpie/video/upload/v1688246449/WhatsApp_Video_2023-07-01_at_10.17.27_PM_wotiiq.mp4',
+      'https://res.cloudinary.com/doammcpie/image/upload/v1688246409/WhatsApp_Image_2023-07-01_at_10.05.28_PM_t9ijup.jpg',
+      'https://res.cloudinary.com/doammcpie/video/upload/v1688246393/WhatsApp_Video_2023-07-01_at_10.06.16_PM_bbdta6.mp4',],
+   
       title: 'ZUP',
       caption: 'Zup is a Twitter sentiment analysis ',
       description:
@@ -139,112 +162,7 @@ export default {
         },
       ],
     },
-    {
-      tag: 'React',
-      image:
-        'https://res.cloudinary.com/doammcpie/video/upload/v1631423190/tough_gfioh6.mp4',
-      title: 'Tough Arc',
-      caption: 'Tough Arc is a kenyan based manga',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-      links: [
-        { link: 'https://tough.netlify.app/', icon: <LinkIcon /> },
-        {
-          link: 'https://github.com/bmugenya/Tough-Arch',
-          icon: <GitHubIcon />,
-        },
-      ],
-    },
-
-        {
-      tag: 'React',
-      image:
-        'https://res.cloudinary.com/doammcpie/video/upload/v1630469462/chuckTopia_ggewmt.mp4',
-      title: 'ChuckTopia',
-      caption: 'A Single Page application that consumes API from chucknorris.io',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-      links: [
-        { link: 'https://bmugenya.github.io/DAP/', icon: <LinkIcon /> },
-        {
-          link: 'https://github.com/bmugenya/DAP',
-          icon: <GitHubIcon />,
-        },
-      ],
-    },
-    {
-      tag: 'React',
-      image:
-        'https://res.cloudinary.com/doammcpie/video/upload/v1627105042/narutopia_kbxwqx.mp4',
-      title: 'TrailerPeak',
-      caption: 'TrailerPeak offers a personalized and immersive movie trailer experience',
-      description: 'TrailerPeak offers a personalized and immersive movie trailer experience, catering to the diverse tastes and preferences of film enthusiasts. The website utilizes advanced recommendation algorithms to curate a tailored selection of trailers based on users' viewing history, genre preferences, and ratings. By delivering highly relevant and intriguing trailers, TrailerPeak ensures users discover new movies that resonate with their individual interests.',
-      links: [
-        { link: 'https://narutopia-z9c7.vercel.app', icon: <LinkIcon /> },
-        {
-          link: 'https://github.com/bmugenya/Narutopia',
-          icon: <GitHubIcon />,
-        },
-      ],
-    },
-
-    {
-      tag: 'React',
-      image:
-        'https://res.cloudinary.com/doammcpie/video/upload/v1630620457/rafiki_l2tdwj.mp4',
-      title: 'Rafiki',
-      caption: 'anonymous communication',
-      description:
-        "Rafiki offers a haven for anonymous communication inorder to eradicate fear of judgment and encourage openness. Rafiki's existence was brought about due to the alarming rate of internal suffering . Rafiki consist of highly experienced counsellors and occupational health therapists as well as friends who will listen because its time you let someone know",
-
-      links: [{ link: 'https://rafiki.netlify.app/', icon: <LinkIcon /> }],
-    },
-
-    {
-      tag: 'React',
-      image:
-        'https://res.cloudinary.com/doammcpie/video/upload/v1685289303/Juliarts_pdjtbw.webm',
-      title: 'JuliArt',
-      caption: 'JuliArt',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-      links: [{ link: 'https://juliarts.vercel.app/', icon: <LinkIcon /> }],
-    },
-
-        {
-      tag: 'Flask',
-      image:
-        'https://res.cloudinary.com/doammcpie/video/upload/v1680690846/Alsmotors_wtsojl.webm',
-      title: 'Alsmotors',
-      caption: 'Alsmotors a car dealership',
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      links: [
-     
-        {
-          link: 'https://alsmotors.onrender.com',
-          icon: <LinkIcon />,
-        },
-      ],
-    },
 
 
-
-        {
-      tag: 'React',
-      image:
-        'https://res.cloudinary.com/doammcpie/video/upload/v1684459120/Diani_Konnect_2_hpmmxb.mp4',
-      title: 'Diani Konnect',
-      caption: 'Diani Konnect',
-      description:
-        "Diani Beach is a stunning South Coast destination in Kwale County, known for its vast coastline and breathtaking beaches.",
-      links: [
-     
-        {
-          link: 'https://dianikonnect.vercel.app/',
-          icon: <LinkIcon />,
-        },
-      ],
-    },
   ],
 }

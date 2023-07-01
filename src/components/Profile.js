@@ -40,7 +40,7 @@ const Profile = () => {
 
       <figure className='profile_image'>
         <img
-          src='https://res.cloudinary.com/doammcpie/image/upload/v1613640364/33225184_wbgtri.png'
+          src='https://res.cloudinary.com/doammcpie/image/upload/v1688245475/file_nykhgw.jpg'
           alt='profile'
         />
       </figure>
@@ -63,7 +63,7 @@ const Profile = () => {
           <a
             className='btn_link'
             target='_blank'
-            href='https://github.com/bmugenya/CSC-314/raw/master/CV.pdf'
+            href='https://res.cloudinary.com/doammcpie/image/upload/v1688245298/my_cv27.5.2023_dwztck.pdf'
             download
           >
             <CustomButton text={'Download CV'} icon={<GetAppIcon />} />
